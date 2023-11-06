@@ -846,7 +846,7 @@ vps_info() {
   ram=$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2 }')
 
   clear
-  title_sub "\033[3;40m${a10:-•UDP Custom Manager} by @Infinity"
+  title_sub "\033[3;40m${a10:-•UDP Custom Manager} by InFiNitY"
   print_center -ama ' Version: ⇢ 3.0'
   print_center -ama ' VPS Info'
   msg -bar
@@ -869,7 +869,7 @@ vps_info() {
 # [UDP - Request]
 menu_udp_request() {
   make_service
-  title "\033[3;40m${a10:-•UDP Custom | UDP Request Manager} by @Infinity"
+  title "\033[3;40m${a10:-•UDP Custom | UDP Request Manager} by InFiNitY"
   print_center -ama ' Version: ⇢ 3.0'
   print_center -ama ' UDP REQUEST'
   print_center -ama ' Tunnel App : SocksIP'
@@ -989,7 +989,7 @@ menu_main() {
   # title "\033[3;40m${a10:-• UDP Custom | UDP Request Manager} •"
   main_title "\033[3;40m${a10:-• UDP Custom Manager} •"
   print_center -ama 'Version: ⇢ 3.0'
-  print_center -ama 'by @Namydev'
+  print_center -ama 'by InFiNitY'
   msg -bar
 
   # calculate RAM and CPU usage

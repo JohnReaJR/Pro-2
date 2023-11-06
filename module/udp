@@ -939,8 +939,8 @@ menu_udp_request() {
 
 # [UDP - Custom]
 menu_udp_custom() {
-  # title "\033[3;40m${a10:-•UDP Custom | UDP Request Manager} by @Infinity"
-  title_sub "\033[3;40m${a10:-•UDP Custom Manager} by @Infinity"
+  # title "\033[3;40m${a10:-•UDP Custom | UDP Request Manager} by InFiNitY"
+  title_sub "\033[3;40m${a10:-•UDP Custom Manager} by InFiNitY"
   print_center -ama ' Version: 3.0'
   print_center -ama ' UDP CUSTOM'
   print_center -ama ' Tunnel App : HTTP Custom'

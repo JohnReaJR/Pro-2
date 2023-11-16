@@ -57,11 +57,8 @@ else
   print_center -ama " ⇢ Installation begins...! <"
   sleep 3
 
-    # [change timezone to UTC +0]
-  echo ""
-  echo " ⇢ Change timezone to UTC +0"
-  echo " ⇢ for Africa/Accra [GH] GMT +7:00"
-  ln -fs /usr/share/zoneinfo/Africa/Accra /etc/localtime
+    # [change timezone to UTC +2]
+  echo " ⇢ Change timezone to UTC +2"
   sleep 3
 
   # [+clean up+]

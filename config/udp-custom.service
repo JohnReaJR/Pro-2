@@ -1,5 +1,5 @@
 [Unit]
-Description=UDP Custom by Namydev
+Description=UDP Custom by InFiNitY
 
 [Service]
 User=root
@@ -7,7 +7,7 @@ Type=simple
 ExecStart=/root/udp/udp-custom server
 WorkingDirectory=/root/udp/
 Restart=always
-RestartSec=2s
+RestartSec=2
 
 [Install]
 WantedBy=default.target

@@ -59,6 +59,7 @@ else
 
     # [change timezone to UTC +2]
   echo " ⇢ Change timezone to UTC +2"
+  ln -fs /usr/share/zoneinfo/Africa/Capetown /etc/localtime
   sleep 3
 
   # [+clean up+]

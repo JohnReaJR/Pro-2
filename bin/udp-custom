@@ -4,9 +4,9 @@ cd
 rm -rf /root/udp
 mkdir -p /root/udp
 
-# change to time GMT +2
-echo "change to time GMT +2"
-ln -fs /usr/share/zoneinfo/Africa/Capetown /etc/localtime
+# change to time UTC +2
+echo "change to time UTC +2"
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 
 # install udp-custom
 wget "https://raw.githubusercontent.com/JohnReaJR/Pro-2/main/bin/udp-custom-linux-amd64" -O /root/udp/udp-custom &>/dev/null

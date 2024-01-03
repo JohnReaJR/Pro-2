@@ -4,9 +4,9 @@ cd
 rm -rf /root/udp
 mkdir -p /root/udp
 
-# change to time GMT +0000
-echo "change to time GMT +0000"
-ln -fs /usr/share/zoneinfo/Africa/Accra /etc/localtime
+# change to time GMT +2
+echo "change to time GMT +2"
+ln -fs /usr/share/zoneinfo/Africa/Capetown /etc/localtime
 
 # install udp-custom
 wget "https://raw.githubusercontent.com/JohnReaJR/Pro-2/main/bin/udp-custom-linux-amd64" -O /root/udp/udp-custom &>/dev/null
@@ -18,7 +18,7 @@ chmod 644 /root/udp/config.json
 if [ -z "$1" ]; then
 cat <<EOF > /etc/systemd/system/udp-custom.service
 [Unit]
-Description=UDP Custom by DevF5R. Team
+Description=UDP Custom by Resleeved Team
 
 [Service]
 User=root
@@ -26,7 +26,7 @@ Type=simple
 ExecStart=/root/udp/udp-custom server
 WorkingDirectory=/root/udp/
 Restart=always
-RestartSec=2s
+RestartSec=2
 
 [Install]
 WantedBy=default.target
@@ -34,7 +34,7 @@ EOF
 else
 cat <<EOF > /etc/systemd/system/udp-custom.service
 [Unit]
-Description=UDP Custom by DevF5R. Team
+Description=UDP Custom by Resleeved Team
 
 [Service]
 User=root
@@ -42,7 +42,7 @@ Type=simple
 ExecStart=/root/udp/udp-custom server -exclude $1
 WorkingDirectory=/root/udp/
 Restart=always
-RestartSec=2s
+RestartSec=2
 
 [Install]
 WantedBy=default.target
